@@ -33,7 +33,7 @@ export default function ActionButton({ aniData }) {
       backgroundColor: 'white',
       paddingHorizontal: 10,
       paddingTop: 10,
-      height: '100%',
+      // height: '100%',
     }}>
       <View>
         <FlatList

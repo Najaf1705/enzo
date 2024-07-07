@@ -5,6 +5,7 @@ import { db } from '../../configs/FirebaseConfig';
 import { doc, getDoc } from 'firebase/firestore';
 import Intro from '../../components/AnimeInfo/Intro';
 import ActionButton from '../../components/AnimeInfo/ActionButton';
+import Review from '../../components/AnimeInfo/Review';
 
 export default function AnimeDetailById() {
   // should be same as file name
@@ -39,9 +40,10 @@ export default function AnimeDetailById() {
   }
 
   return (
-    <View>
+    <ScrollView>
       <Intro aniData={animeDetail} />
       <ActionButton aniData={animeDetail} />
-    </View>
+      <Review aniData={animeDetail} />
+    </ScrollView>
   )
 }
